@@ -1,23 +1,90 @@
 @import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Cormorant:wght@700&display=swap');
 body {
     font-size: 12pt;
+    font-family: "Gill Sans", sans-serif;
 }
 
-p {
-    color: red;
+.allergen {
+    font-weight: bold;
+    font-size: 0.7em;
+}
+
+#burger-selection {
+    background-color: black;
+    color: white;
+}
+
+button:hover {
+    background-color: #4CAF50; /* Ändra till önskad bakgrundsfärg */
+    color: white; /* Om du vill ändra textfärgen också */
+    cursor: pointer; /* Ändrar muspekaren till en hand */
+}
+
+section {
+    margin: 20px; /* Skapar utrymme runt varje sektion */
+    border: 2px solid currentColor; /* Skapar en streckad ram i samma färg som texten */
+    padding: 20px; /* Lägger till avstånd mellan ramen och texten */
+    margin-bottom: 10px; /* Skapar avstånd mellan sektionerna */
+}
+
+button {
+    margin: 20px;
+}
+
+.burger-item {
+    display: inline-block;
+    padding: 10px; /* Skapar lite inre utrymme inom varje hamburgardiv */
+    margin: 20px; /* Skapar utrymme mellan varje hamburgardiv */
+    border: 1px solid #ddd; /* Lägg till en ram för att separera varje hamburgare visuellt */
+    border-radius: 5px; /* Gör hörnen lite rundade (valfritt) */
+}
+
+.header-banner {
+    position: relative;
+    margin: 20px; /* Lägger till 20px top/bottom och auto på sidorna för att centrera */
+    width: calc(100% - 40px);
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white; /* Textfärg för bättre kontrast mot bakgrunden */
+}
+
+.header-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Gör att bilden täcker hela ytan */
+    z-index: -1; /* Lägger bilden bakom texten */
+    opacity: 0.7
 }
 
 h1 {
     font-family: 'Agbalumo';
     font-size: 36pt;
 }
-main, header, footer, nav ul {
-    max-width: 40rem;
-    margin: 0 auto 0 auto;
+
+.burger-container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, 30%);
 }
-main {
-    background-color: bisque;
+
+.burger-container.burger-item {
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 100%;
+    width: 100%;
 }
+
+.burger-item img{
+    width: 100%;
+}
+
+
 
 /* nav ul li {
     display: inline-block;
@@ -26,39 +93,3 @@ main {
     margin: 1em;
 } */
 
-header {
-    background-image: url("../img/polacks.jpg");
-    background-size: cover;
-    overflow: hidden;
-    width: 100%;
-    height: 200px;
-    opacity: 0.5;
-}
-
-header h1 {
-    width:40rem;
-    margin: 0 auto;
-    text-align: center;
-}
-
-nav ul {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 9.25em);
-    gap: 1em;
-    padding: 0;
-}
-
-nav li {
-    display: block;
-    background-color: grey;
-    padding: 1em;
-}
-
-.Very-good {
-    color: green;
-}
-
-.Master {
-    color: green;
-    font-weight: bold;
-}

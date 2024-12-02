@@ -1,123 +1,13 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-   <head>
-       <title>Burger Order System</title>
-       <meta charset="utf-8"/>
-       <link rel="stylesheet" href="public/css/style.css">
-   </head>
-   <body>
-        <header class="header-banner">
-            <h1>Välkommen till BurgerOnline</h1>
-            <img src=https://img.freepik.com/premium-vector/fast-food-seamless-pattern-vector-illustration-traditional-american-food-background-print-food_514903-1874.jpg alt="Bakgrundsbild" class="header-image">
-        </header>
-
-        <section id="burger-selection">
-            <h2>Välj din hamburgare</h2>
-            <p>Här kan du välja vilken hamburgare du vill beställa.</p>
-
-            <div class="burger-item">
-                <h3>Cheese Burger</h3>
-                <img src=https://www.sargento.com/assets/Uploads/Recipe/Image/burger_0.jpg alt="Bild på Cheese Burger" style="width:300px; height:150px; object-fit: cover;">
-                <ul>
-                    <li>Nötkött</li>
-                    <li>Bacon</li>
-                    <li>Gul lök</li>
-                    <li>Ost<span class="allergen"> laktos</span></li>
-                    <li>Bröd<span class="allergen"> gluten</span></li>
-                </ul>
-            </div>
-
-            <div class="burger-item">
-                <h3>Chicken Burger</h3>
-                <img src=https://cdn.kronfagel.se/app/uploads/2023/08/17140546/FS_3179_crispy_burger_HERO-1920x860.jpg alt="Bild på Cheese Burger" style="width:300px; height:150px; object-fit: cover;">
-                <ul>
-                    <li>Kyckling</li>
-                    <li>Tomat</li>
-                    <li>Gurka</li>
-                    <li>Dressing<span class="allergen"> laktos </span></li>
-                    <li>Bröd<span class="allergen"> gluten </span></li>
-                </ul>
-            </div>
-
-            <div class="burger-item">
-                <h3> Halloumi Burger</h3>
-                <img src=https://food-images.files.bbci.co.uk/food/recipes/chargrilled_halloumi_09010_16x9.jpg alt="Bild på Cheese Burger" style="width:300px; height:150px; object-fit: cover;">
-                <ul>
-                    <li>Halloumi</li>
-                    <li>Tomatsalsa</li>
-                    <li>Avocado</li>
-                    <li>Sriracha mayo<span class="allergen"> laktos </span></li>
-                    <li>Bröd<span class="allergen"> gluten </span></li>
-                </ul>
-            </div>
-
-        </section>
-        
-        <section id="order-info">
-            <h2>Leveransinformation</h2>
-            <p>Fyll i din leveransadress och kontaktuppgifter för att få din beställning levererad.</p>
-            <form>
-                <p>
-                    <label for="fullname">För- och efternamn:</label><br>
-                    <input type="text" id="fullname" name="fn" required="required" placeholder="För- och efternamn">
-                </p>
-                <p>
-                    <label for="email">E-mail:</label><br>
-                    <input type="email" id="email" name="em" required="required" placeholder="E-mail adress">
-                </p>
-                <p>
-                    <label for="street">Gata:</label><br>
-                    <input type="text" id="street" name="street" required="required" placeholder="Gata">
-                </p>
-                <p>
-                    <label for="house-number">Husnummer:</label><br>
-                    <input type="number" id="house-number" name="house-number" required="required" placeholder="Husnummer">
-                </p>
-            </form>
-        
-
-        
-            <h3>Betalningsalternativ</h3>
-            <p>
-                <label for="payment-method">Välj betalningsmetod:</label><be>
-                <select id="payment-method" name="payment-method">
-                    <option>Kredit kort</option>
-                    <option>Swish</option>
-                    <option>Apple pay</option>
-                </select>
-            </p>
-        
-
-            <h2>Kön</h2>
-          
-            <p>Välj ditt kön:</p>
-            
-            <label>
-              <input type="radio" name="gender" value="male" checked> Man
-            </label><br>
-            
-            <label>
-              <input type="radio" name="gender" value="female"> Kvinna
-            </label><br>
-            
-            <label>
-              <input type="radio" name="gender" value="no-disclosure"> Vill ej uppge
-            </label>
-        </section>
-
-        
-        <button type="button">
-            <img src="https://cdn.pixabay.com/photo/2016/03/31/14/37/check-mark-1292787_1280.png" 
-            alt="Beställningsikon" 
-            style="width: 20px; height: 20px; vertical-align: middle;">
-            Skicka Beställning
-        </button>
-        
-
-        <hr>
-
-        <footer>
-            <p>&copy; 2024 BurgerOnline. Alla rättigheter förbehållna.</p>
-        </footer>
-   </body>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
 </html>

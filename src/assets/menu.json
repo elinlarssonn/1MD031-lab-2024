@@ -1,21 +1,21 @@
 [{
-    "name": "Veggie Bliss", 
+    "name": "Cheese Burger", 
     "kCal": 500, 
-    "url": "https://images-bonnier.imgix.net/files/ifo/production/20220412084608/Kødfri-burger-1.jpg?auto=compress,format&w=1024%201024w",
-    "lactose": false, 
-    "gluten": false
+    "image": "https://www.sargento.com/assets/Uploads/Recipe/Image/burger_0.jpg",
+    "lactose": true, 
+    "gluten": true
 },
 {
-    "name": "Veggie Bliss", 
-    "kCal": 500, 
-    "url": "https://images-bonnier.imgix.net/files/ifo/production/20220412084608/Kødfri-burger-1.jpg?auto=compress,format&w=1024%201024w",
-    "lactose": false, 
-    "gluten": false
+    "name": "Chicken Burger", 
+    "kCal": 400, 
+    "image": "https://cdn.kronfagel.se/app/uploads/2023/08/17140546/FS_3179_crispy_burger_HERO-1920x860.jpg",
+    "lactose": true, 
+    "gluten": true
 },
 {
-    "name": "Veggie Bliss", 
-    "kCal": 500, 
-    "url": "https://images-bonnier.imgix.net/files/ifo/production/20220412084608/Kødfri-burger-1.jpg?auto=compress,format&w=1024%201024w",
-    "lactose": false, 
-    "gluten": false
+    "name": "Halloumi Burger", 
+    "kCal": 300, 
+    "image": "https://food-images.files.bbci.co.uk/food/recipes/chargrilled_halloumi_09010_16x9.jpg",
+    "lactose": true, 
+    "gluten": true
 }]
